@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // dynamicznie typowany jezyk - nie musimy określać typu zmiennej
+        let data = 10; // liczba - Number
+        data = "hello"; // tekst - String
+        let flagBlue = true; //wartosc logiczna Boolean - wartosc true
+        let flagRed = false; //wartosc logiczna Boolean - wartosc false
+        let someValue; // Brak przypisania wartosci podczas deklaracji zmiennej automatycznie przypisze wartosc undefined
+        console.log(someValue); // undefined
+        someValue = true; // zmiana wartosci zmiennej na bool true
+        console.log(someValue);
+        someValue = null; // zmiana wartosci na pustą
+        console.log(someValue);
+        let testText = 'XD'; 
+        let anotherTestText = "XD";
+        let anotherAnotherTestText = `
+        X
+        D`;
+        console.log(anotherAnotherTestText);
+     // "" '' - taki sam container na string
+     // `` - pozwala na zapis w wielu liniach stringa
+     // `` - pozwala osadzic w stringu jakas inna wartosc np:
+     // string w baktickach nazywamy template literals
+     let testXd = `
+     Hi
+     ${testText}`
+     console.log(testXd);
+     //zmienne zawsze deklarujemy przed ich uzyciem
+    </script>
+</body>
+</html>
